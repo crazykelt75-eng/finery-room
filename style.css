@@ -17,13 +17,13 @@
   --color-surface-card-border: rgba(201, 167, 224, 0.22);
   --color-surface-card-border-hover: rgba(201, 167, 224, 0.55);
 
-  /* Purples & Lavenders sampled exactly from the official FR Monogram */
-  --color-amethyst: #865a97;
-  --color-amethyst-deep: #542d64;
-  --color-amethyst-glow: rgba(134, 90, 151, 0.45);
-  --color-lavender: #c9a7e0;
-  --color-lavender-light: #f1eff5;
-  --color-lavender-subtle: rgba(201, 167, 224, 0.15);
+  /* Purples & Lavenders sampled from the original FR Monogram */
+  --color-amethyst: #9B59B6;
+  --color-amethyst-deep: #7D3C98;
+  --color-amethyst-glow: rgba(155, 89, 182, 0.35);
+  --color-lavender: #C9A7E0;
+  --color-lavender-light: #E8D7F7;
+  --color-lavender-subtle: rgba(201, 167, 224, 0.12);
 
   /* High-Contrast Editorial Typography */
   --color-text-primary: #FBF9FD;
@@ -450,52 +450,6 @@ button, input {
 .hero-content {
   max-width: 820px;
   margin: 0 auto;
-}
-
-/* Official Circular Brand Logo Emblem */
-.hero-logo-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 22px;
-}
-
-.hero-logo-halo {
-  position: relative;
-  display: inline-flex;
-  padding: 6px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(134, 90, 151, 0.28) 0%, rgba(84, 45, 100, 0.12) 60%, transparent 80%);
-}
-
-.hero-logo-halo::before {
-  content: '';
-  position: absolute;
-  inset: -6px;
-  border-radius: 50%;
-  border: 1px dashed rgba(201, 167, 224, 0.35);
-  animation: rotateRing 40s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes rotateRing {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.hero-brand-logo {
-  width: 144px;
-  height: 144px;
-  border-radius: 50%;
-  border: 2px solid var(--color-amethyst);
-  box-shadow: 0 0 35px var(--color-amethyst-glow), 0 12px 32px rgba(0, 0, 0, 0.75);
-  object-fit: cover;
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-}
-
-.hero-brand-logo:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 45px rgba(134, 90, 151, 0.75), 0 16px 40px rgba(0, 0, 0, 0.9);
 }
 
 .hero-badge-wrap {
@@ -980,24 +934,17 @@ button, input {
 }
 
 .value-point-bullet {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background: rgba(134, 90, 151, 0.18);
+  background: rgba(155, 89, 182, 0.15);
   border: 1px solid var(--color-amethyst);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-lavender);
-  box-shadow: 0 0 12px rgba(134, 90, 151, 0.25);
   flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.fleur-bullet-svg {
-  width: 14px;
-  height: 14px;
-  fill: currentColor;
+  margin-top: 3px;
 }
 
 .value-point-text h5 {
@@ -1650,11 +1597,6 @@ button, input {
   .hero-section {
     padding: 40px 0 60px;
     min-height: auto;
-  }
-
-  .hero-brand-logo {
-    width: 118px;
-    height: 118px;
   }
 
   .hero-pillars {
