@@ -1,28 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <defs>
     <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#1b1226"/>
-      <stop offset="100%" stop-color="#0a090c"/>
+      <stop offset="0%" stop-color="#181022"/>
+      <stop offset="85%" stop-color="#0a090c"/>
+      <stop offset="100%" stop-color="#050507"/>
     </radialGradient>
-    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="brandPurple" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#c9a7e0"/>
-      <stop offset="50%" stop-color="#9b59b6"/>
-      <stop offset="100%" stop-color="#6c3483"/>
+      <stop offset="50%" stop-color="#865a97"/>
+      <stop offset="100%" stop-color="#542d64"/>
     </linearGradient>
   </defs>
-  <!-- Background circle -->
-  <circle cx="50" cy="50" r="48" fill="url(#bgGlow)" stroke="url(#purpleGrad)" stroke-width="2.5"/>
-  <circle cx="50" cy="50" r="45" fill="none" stroke="#9b59b6" stroke-width="0.8" stroke-dasharray="1 1"/>
-  
-  <!-- Stylized FR monogram -->
-  <text x="36" y="58" font-family="'Playfair Display', 'Bodoni MT', serif" font-size="34" font-weight="700" fill="url(#purpleGrad)" text-anchor="middle">F</text>
-  <text x="58" y="58" font-family="'Playfair Display', 'Bodoni MT', serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">R</text>
-  
-  <!-- Sweeping lash curve from R -->
-  <path d="M 64 56 Q 78 58 84 46" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <!-- Lash hairs -->
-  <path d="M 72 57 L 76 50 M 75 56 L 80 49 M 78 54 L 84 48 M 81 52 L 86 46" stroke="#c9a7e0" stroke-width="1" stroke-linecap="round"/>
 
-  <!-- Fleur-de-lis tiny accent -->
-  <path d="M 50 72 C 48 70 45 71 45 74 C 45 76 48 77 50 80 C 52 77 55 76 55 74 C 55 71 52 70 50 72 Z" fill="url(#purpleGrad)"/>
+  <!-- Circular Base -->
+  <circle cx="60" cy="60" r="58" fill="url(#bgGlow)"/>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="url(#brandPurple)" stroke-width="2.5"/>
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#865a97" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Stylized Monogram FR -->
+  <text x="44" y="66" font-family="'Bodoni Moda', 'Playfair Display', Didot, serif" font-size="40" font-weight="700" fill="url(#brandPurple)" text-anchor="middle">F</text>
+  <text x="68" y="66" font-family="'Bodoni Moda', 'Playfair Display', Didot, serif" font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">R</text>
+
+  <!-- Sweeping lash fan from R leg -->
+  <path d="M 75 64 Q 92 67 100 52" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- Delicate lash hairs -->
+  <path d="M 84 65 L 89 57 M 87 64 L 93 56 M 91 62 L 98 54 M 94 60 L 102 52 M 97 57 L 105 50" stroke="#c9a7e0" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Manicured hand hint on left -->
+  <path d="M 22 56 Q 26 48 30 52 Q 28 62 26 68" fill="none" stroke="#865a97" stroke-width="1.2" opacity="0.8"/>
+  <path d="M 27 48 L 29 45 M 24 53 L 26 50" stroke="#c9a7e0" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Fleur-de-lis divider ornament -->
+  <path d="M 60 84 C 58 81 54 82 54 85 C 54 88 58 89 60 93 C 62 89 66 88 66 85 C 66 82 62 81 60 84 Z" fill="url(#brandPurple)"/>
+  <line x1="38" y1="87" x2="52" y2="87" stroke="url(#brandPurple)" stroke-width="0.8" opacity="0.7"/>
+  <line x1="68" y1="87" x2="82" y2="87" stroke="url(#brandPurple)" stroke-width="0.8" opacity="0.7"/>
 </svg>
