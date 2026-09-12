@@ -803,8 +803,8 @@ button, input {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   margin-top: 48px;
 }
 
@@ -812,10 +812,9 @@ button, input {
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  height: 320px;
+  height: 380px;
   border: 1px solid rgba(201, 167, 224, 0.15);
   cursor: pointer;
-  group: true;
 }
 
 .gallery-item img {
