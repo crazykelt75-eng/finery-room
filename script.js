@@ -10,9 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileToggle = document.getElementById('mobileToggle');
   const mobileDrawer = document.getElementById('mobileDrawer');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-  const vipForm = document.getElementById('vipForm');
-  const vipInput = document.getElementById('vipName');
-  const vipNotice = document.getElementById('vipNotice');
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
   const faqAssistantForm = document.getElementById('faqAssistantForm');
   const faqQuestion = document.getElementById('faqAssistantQuestion');
   const faqHoneypot = document.getElementById('faqAssistantWebsite');
@@ -42,11 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isOpen) {
         mobileDrawer.classList.remove('open');
         mobileToggle.setAttribute('aria-expanded', 'false');
+        mobileToggle.setAttribute('aria-label', 'Open menu');
         mobileDrawer.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
       } else {
         mobileDrawer.classList.add('open');
         mobileToggle.setAttribute('aria-expanded', 'true');
+        mobileToggle.setAttribute('aria-label', 'Close menu');
         mobileDrawer.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
       }
@@ -64,31 +65,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. VIP Form Re-marketing Submission
-  if (vipForm && vipInput) {
-    vipForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const val = vipInput.value.trim();
-      if (!val) return;
-
-      if (vipNotice) {
-        vipNotice.style.display = 'block';
-        vipNotice.textContent = 'Redirecting to WhatsApp to confirm your VIP list spot...';
-      }
-
-      const encodedMsg = encodeURIComponent(
-        `Hi Finery Room, please add me to your VIP WhatsApp list for first-look promos and specials! (Name/Contact: ${val})`
-      );
-      const whatsappUrl = `https://wa.me/26776584100?text=${encodedMsg}`;
-
-      setTimeout(() => {
-        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-        vipInput.value = '';
-        if (vipNotice) {
-          vipNotice.textContent = 'Thank you! Your WhatsApp message has been prepared.';
-        }
-      }, 600);
+  // 4. Our Work gallery filter (All / Nails / Lashes)
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+      filterButtons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+      galleryItems.forEach(item => {
+        item.hidden = filter !== 'all' && item.dataset.category !== filter;
+      });
     });
+  });
+
+  // Skip decorative hero motion when the visitor has asked to save data
+  if (navigator.connection?.saveData) {
+    document.documentElement.classList.add('save-data');
   }
 
   // 5. Website FAQ assistant. The form sends only a short question to n8n.
