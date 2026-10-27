@@ -888,6 +888,94 @@
       "used_in": "refill ad (static image)"
     },
     {
+      "file": "assets/ads/ad-premium-1x1.mp4",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "accepted Higgsfield clip nails-2-9x16 (seedance_2_0_mini), cropped; text layers from HTML via headless Chrome; ffmpeg H.264 CRF 24, 10 s, silent",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "premium video ad: hook from 0 s, prices from 2.5 s, WhatsApp call to action from 5 s"
+    },
+    {
+      "file": "assets/ads/ad-premium-9x16.mp4",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "accepted Higgsfield clip nails-2-9x16 (seedance_2_0_mini), cropped; text layers from HTML via headless Chrome; ffmpeg H.264 CRF 24, 10 s, silent",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "premium video ad: hook from 0 s, prices from 2.5 s, WhatsApp call to action from 5 s"
+    },
+    {
+      "file": "assets/ads/ad-problem-1x1.mp4",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local slow zoom (ffmpeg zoompan) on the real composite; no AI motion; text layers from HTML via headless Chrome; ffmpeg H.264 CRF 24, 10 s, silent",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "problem video ad: hook from 0 s, prices from 2.5 s, WhatsApp call to action from 5 s"
+    },
+    {
+      "file": "assets/ads/ad-problem-9x16.mp4",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local slow zoom (ffmpeg zoompan) on the real composite; no AI motion; text layers from HTML via headless Chrome; ffmpeg H.264 CRF 24, 10 s, silent",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "problem video ad: hook from 0 s, prices from 2.5 s, WhatsApp call to action from 5 s"
+    },
+    {
+      "file": "assets/ads/ad-refill-1x1.mp4",
+      "source_photo": "assets/work-lashes-2.jpg (9:16), assets/work-lashes-1.jpg (1:1)",
+      "model": "local slow zoom (ffmpeg zoompan) on the real photo; no AI motion; text layers from HTML via headless Chrome; ffmpeg H.264 CRF 24, 10 s, silent",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "refill video ad: hook from 0 s, prices from 2.5 s, WhatsApp call to action from 5 s"
+    },
+    {
+      "file": "assets/ads/ad-refill-9x16.mp4",
+      "source_photo": "assets/work-lashes-2.jpg (9:16), assets/work-lashes-1.jpg (1:1)",
+      "model": "local slow zoom (ffmpeg zoompan) on the real photo; no AI motion; text layers from HTML via headless Chrome; ffmpeg H.264 CRF 24, 10 s, silent",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "refill video ad: hook from 0 s, prices from 2.5 s, WhatsApp call to action from 5 s"
+    },
+    {
+      "file": "assets/care-guide.pdf",
+      "source_photo": null,
+      "model": "marketing/care-guide/care-guide.html printed by headless Chrome",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site Care Guide download; thank-you WhatsApp template"
+    },
+    {
+      "file": "marketing/vouchers/draft-voucher-P150.jpg",
+      "source_photo": null,
+      "model": "marketing/vouchers/voucher.html rendered by headless Chrome",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "DRAFT: voucher values not yet approved by the owner"
+    },
+    {
+      "file": "marketing/vouchers/draft-voucher-P40.jpg",
+      "source_photo": null,
+      "model": "marketing/vouchers/voucher.html rendered by headless Chrome",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "DRAFT: voucher values not yet approved by the owner"
+    },
+    {
+      "file": "marketing/vouchers/draft-voucher-P70.jpg",
+      "source_photo": null,
+      "model": "marketing/vouchers/voucher.html rendered by headless Chrome",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "DRAFT: voucher values not yet approved by the owner"
+    },
+    {
+      "file": "marketing/vouchers/draft-voucher-P80.jpg",
+      "source_photo": null,
+      "model": "marketing/vouchers/voucher.html rendered by headless Chrome",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "DRAFT: voucher values not yet approved by the owner"
+    },
+    {
       "file": "assets/img/share-1200x630.jpg",
       "source_photo": "assets/work-nails-1.jpg",
       "model": "local HTML layout rendered by headless Chrome",
