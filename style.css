@@ -857,6 +857,11 @@ ul, ol {
   border-bottom: 1px solid rgba(201, 167, 224, 0.08);
 }
 
+.care-download {
+  text-align: center;
+  margin-top: 24px;
+}
+
 .care-card li:last-child {
   border-bottom: none;
 }
