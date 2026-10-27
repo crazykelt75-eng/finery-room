@@ -813,6 +813,30 @@
             </div>
           </details>
         </div>
+
+        <section class="faq-assistant-card" aria-labelledby="faqAssistantTitle">
+          <span class="section-label">A LITTLE MORE HELP</span>
+          <h3 id="faqAssistantTitle">Ask Finery Room</h3>
+          <p class="faq-assistant-intro">Ask about our listed services, prices, or studio policies. Booking times and personal enquiries are confirmed by our team on WhatsApp.</p>
+          <form id="faqAssistantForm" class="faq-assistant-form">
+            <label for="faqAssistantQuestion">Your question</label>
+            <textarea id="faqAssistantQuestion" name="question" rows="3" maxlength="500" required placeholder="For example: How much is a two-week lash refill?"></textarea>
+            <div class="faq-assistant-form-footer">
+              <span class="faq-assistant-privacy">Please leave out names, phone numbers, and private details.</span>
+              <button class="btn btn-secondary" type="submit">Get an answer</button>
+            </div>
+            <div class="faq-assistant-trap" aria-hidden="true">
+              <label for="faqAssistantWebsite">Leave this field empty</label>
+              <input id="faqAssistantWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+          </form>
+          <p id="faqAssistantStatus" class="faq-assistant-status" role="status" aria-live="polite"></p>
+          <div id="faqAssistantReply" class="faq-assistant-reply" hidden>
+            <span class="faq-assistant-reply-label">FINERY ROOM ASSISTANT</span>
+            <p id="faqAssistantAnswer"></p>
+            <a id="faqAssistantWhatsApp" class="btn btn-outline btn-sm" href="https://wa.me/26776584100" target="_blank" rel="noopener noreferrer" hidden>Continue on WhatsApp</a>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -1014,6 +1038,9 @@
     </svg>
     <span>Book on WhatsApp</span>
   </a>
+
+  <!-- Public endpoint only; no credentials belong in this file. -->
+  <script src="faq-assistant-config.js"></script>
 
   <!-- JavaScript logic -->
   <script src="script.js"></script>

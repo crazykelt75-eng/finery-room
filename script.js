@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const vipForm = document.getElementById('vipForm');
   const vipInput = document.getElementById('vipName');
   const vipNotice = document.getElementById('vipNotice');
+  const faqAssistantForm = document.getElementById('faqAssistantForm');
+  const faqQuestion = document.getElementById('faqAssistantQuestion');
+  const faqHoneypot = document.getElementById('faqAssistantWebsite');
+  const faqStatus = document.getElementById('faqAssistantStatus');
+  const faqReply = document.getElementById('faqAssistantReply');
+  const faqAnswer = document.getElementById('faqAssistantAnswer');
+  const faqWhatsApp = document.getElementById('faqAssistantWhatsApp');
+  const faqSubmit = faqAssistantForm?.querySelector('button[type="submit"]');
 
   // 2. Header Scroll Effect
   let lastScrollY = window.scrollY;
@@ -83,7 +91,75 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Enhance Accordion Accessibility (FAQ)
+  // 5. Website FAQ assistant. The form sends only a short question to n8n.
+  if (faqAssistantForm && faqQuestion && faqStatus && faqReply && faqAnswer && faqWhatsApp && faqSubmit) {
+    const webhookUrl = String(window.FineryRoomFaqConfig?.webhookUrl || '').trim();
+    let lastQuestionAt = 0;
+
+    faqAssistantForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const question = faqQuestion.value.trim();
+
+      if (faqHoneypot?.value.trim()) return;
+      if (!question || question.length > 500) {
+        faqStatus.textContent = 'Please enter a question under 500 characters.';
+        return;
+      }
+      if (/[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/.test(question) || /\+?\d[\d\s().-]{6,}\d/.test(question)) {
+        faqStatus.textContent = 'Please remove email addresses or phone numbers from your question.';
+        return;
+      }
+      if (Date.now() - lastQuestionAt < 8000) {
+        faqStatus.textContent = 'Please wait a few seconds before asking another question.';
+        return;
+      }
+      lastQuestionAt = Date.now();
+      faqStatus.textContent = '';
+      faqReply.hidden = true;
+      faqWhatsApp.hidden = true;
+      faqSubmit.disabled = true;
+      faqSubmit.setAttribute('aria-busy', 'true');
+      faqSubmit.textContent = 'Finding an answer…';
+
+      try {
+        if (!webhookUrl) throw new Error('Assistant endpoint is not configured.');
+        const endpoint = new URL(webhookUrl);
+        const localPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+        if (endpoint.protocol !== 'https:' && !localPreview) throw new Error('Secure endpoint required.');
+
+        const response = await fetch(endpoint.href, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question, website: faqHoneypot?.value || '' }),
+          credentials: 'omit',
+          cache: 'no-store',
+          mode: 'cors'
+        });
+        if (!response.ok) throw new Error('FAQ service returned an error.');
+        const data = await response.json();
+        if (typeof data.answer !== 'string' || !data.answer.trim()) throw new Error('FAQ service did not return an answer.');
+
+        faqAnswer.textContent = data.answer.trim();
+        faqReply.hidden = false;
+        faqWhatsApp.hidden = false;
+        faqStatus.textContent = data.needsHuman
+          ? 'For booking or a personal enquiry, our team can help on WhatsApp.'
+          : 'If you need anything else, message our team on WhatsApp.';
+      } catch {
+        faqStatus.textContent = 'The quick answer service is unavailable just now. You can send your question to our team on WhatsApp.';
+        faqWhatsApp.href = `https://wa.me/26776584100?text=${encodeURIComponent(`Hi Finery Room, I have a question: ${question}`)}`;
+        faqWhatsApp.hidden = false;
+        faqReply.hidden = false;
+        faqAnswer.textContent = 'Our team will be happy to help you directly.';
+      } finally {
+        faqSubmit.disabled = false;
+        faqSubmit.removeAttribute('aria-busy');
+        faqSubmit.textContent = 'Get an answer';
+      }
+    });
+  }
+
+  // 6. Enhance Accordion Accessibility (FAQ)
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     item.addEventListener('toggle', () => {
@@ -98,6 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. Log confirmation for studio support
+  // 7. Log confirmation for studio support
   console.log('Finery Room website initialized. Booking line: +267 765 841 00 (Tati Siding, Botswana)');
 });
