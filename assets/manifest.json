@@ -72,6 +72,27 @@
       "used_in": "desktop hero poster (Phase 4)"
     },
     {
+      "file": "assets/img/nails-1-4x5-320.webp",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "site gallery (Phase 4)"
+    },
+    {
       "file": "assets/img/nails-1-4x5-480.webp",
       "source_photo": "assets/work-nails-1.jpg",
       "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
@@ -261,6 +282,27 @@
       "used_in": "desktop hero poster (Phase 4)"
     },
     {
+      "file": "assets/img/nails-2-16x9-640.webp",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "desktop hero poster (Phase 4)"
+    },
+    {
       "file": "assets/img/nails-2-16x9-960.webp",
       "source_photo": "assets/work-nails-2.jpg",
       "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
@@ -280,6 +322,27 @@
       "backdrop": "amethyst",
       "date": "2026-10-27",
       "used_in": "desktop hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-2-4x5-320.webp",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "site gallery (Phase 4)"
     },
     {
       "file": "assets/img/nails-2-4x5-480.webp",
@@ -492,6 +555,27 @@
       "used_in": "desktop hero poster (Phase 4)"
     },
     {
+      "file": "assets/img/nails-3-4x5-320.webp",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "site gallery (Phase 4)"
+    },
+    {
       "file": "assets/img/nails-3-4x5-480.webp",
       "source_photo": "assets/work-nails-3.jpg",
       "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
@@ -660,12 +744,108 @@
       "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
     },
     {
+      "file": "assets/img/lashes-1-4x5-320.webp",
+      "source_photo": "assets/work-lashes-1.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site gallery (Lashes filter)"
+    },
+    {
+      "file": "assets/img/lashes-1-4x5-480.webp",
+      "source_photo": "assets/work-lashes-1.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site gallery (Lashes filter)"
+    },
+    {
+      "file": "assets/img/lashes-1-4x5-768.webp",
+      "source_photo": "assets/work-lashes-1.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site gallery (Lashes filter)"
+    },
+    {
+      "file": "assets/img/lashes-2-4x5-320.webp",
+      "source_photo": "assets/work-lashes-2.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site gallery (Lashes filter)"
+    },
+    {
+      "file": "assets/img/lashes-2-4x5-480.webp",
+      "source_photo": "assets/work-lashes-2.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site gallery (Lashes filter)"
+    },
+    {
+      "file": "assets/img/lashes-2-wide-640.webp",
+      "source_photo": "assets/work-lashes-2.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site price card (Lashes)"
+    },
+    {
+      "file": "assets/img/lashes-2-wide-960.webp",
+      "source_photo": "assets/work-lashes-2.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site price card (Lashes)"
+    },
+    {
+      "file": "assets/img/lashes-3-4x5-320.webp",
+      "source_photo": "assets/work-lashes-3.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site gallery (Lashes filter)"
+    },
+    {
+      "file": "assets/img/lashes-3-4x5-480.webp",
+      "source_photo": "assets/work-lashes-3.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site gallery (Lashes filter)"
+    },
+    {
+      "file": "assets/img/lashes-3-4x5-768.webp",
+      "source_photo": "assets/work-lashes-3.jpg",
+      "model": "none: real photo, cropped and resized only (client consent confirmed by the owner)",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site gallery (Lashes filter)"
+    },
+    {
+      "file": "assets/img/logo-144.webp",
+      "source_photo": "assets/logo.jpg",
+      "model": "none: resized only",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site header (96) and footer (144)"
+    },
+    {
+      "file": "assets/img/logo-96.webp",
+      "source_photo": "assets/logo.jpg",
+      "model": "none: resized only",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "site header (96) and footer (144)"
+    },
+    {
       "file": "assets/ads/ad-premium-1x1.jpg",
       "source_photo": "assets/work-nails-1.jpg",
       "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
       "prompt": null,
       "date": "2026-10-27",
-      "used_in": "premium ad (static); video version pending ffmpeg"
+      "used_in": "premium ad (static image)"
     },
     {
       "file": "assets/ads/ad-premium-9x16.jpg",
@@ -673,7 +853,7 @@
       "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
       "prompt": null,
       "date": "2026-10-27",
-      "used_in": "premium ad (static); video version pending ffmpeg"
+      "used_in": "premium ad (static image)"
     },
     {
       "file": "assets/ads/ad-problem-1x1.jpg",
@@ -681,7 +861,7 @@
       "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
       "prompt": null,
       "date": "2026-10-27",
-      "used_in": "problem ad (static); video version pending ffmpeg"
+      "used_in": "problem ad (static image)"
     },
     {
       "file": "assets/ads/ad-problem-9x16.jpg",
@@ -689,7 +869,7 @@
       "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
       "prompt": null,
       "date": "2026-10-27",
-      "used_in": "problem ad (static); video version pending ffmpeg"
+      "used_in": "problem ad (static image)"
     },
     {
       "file": "assets/ads/ad-refill-1x1.jpg",
@@ -697,7 +877,7 @@
       "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
       "prompt": null,
       "date": "2026-10-27",
-      "used_in": "refill ad (static); video version pending ffmpeg"
+      "used_in": "refill ad (static image)"
     },
     {
       "file": "assets/ads/ad-refill-9x16.jpg",
@@ -705,7 +885,7 @@
       "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
       "prompt": null,
       "date": "2026-10-27",
-      "used_in": "refill ad (static); video version pending ffmpeg"
+      "used_in": "refill ad (static image)"
     },
     {
       "file": "assets/img/share-1200x630.jpg",
@@ -713,7 +893,7 @@
       "model": "local HTML layout rendered by headless Chrome",
       "prompt": null,
       "date": "2026-10-27",
-      "used_in": "og:image / WhatsApp and Facebook link preview (Phase 4)"
+      "used_in": "og:image and twitter:image (WhatsApp and Facebook link preview)"
     }
   ],
   "video_clips": [
@@ -723,7 +903,13 @@
       "model": "seedance_2_0_mini 720p, 5 s, silent",
       "prompt": "Animate this exact photo. The hand stays perfectly still and unchanged (same nails, design, finish, five fingers). Only the camera and light move: slow push-in easing back to the start frame for a seamless loop, a soft band of light across the gloss, satin ripples gently. Brand style lock. No text, logos, new objects, extra fingers or morphing.",
       "credits": 5,
-      "result": "accepted; waiting for ffmpeg compression before it is committed"
+      "result": "accepted: flower and French outlines hold through the clip",
+      "files": [
+        "assets/video/nails-2-9x16.mp4",
+        "assets/video/nails-2-1x1.mp4"
+      ],
+      "processing": "ffmpeg H.264 CRF 26, no audio, faststart; 1:1 is a centre crop of the 9:16 clip",
+      "used_in": "Reels, TikTok, Shorts and WhatsApp Status (9:16); feed posts (1:1)"
     },
     {
       "name": "nails-1-9x16",
