@@ -1,0 +1,753 @@
+{
+  "generated": "2026-10-27",
+  "credits": {
+    "budget_batch_1": 50,
+    "spent": 40.25,
+    "balance_after": 59.75
+  },
+  "backdrops": [
+    {
+      "name": "amethyst-16x9",
+      "model": "gpt_image_2_5 (high, 2k)",
+      "prompt": "Empty luxury nail-and-lash studio backdrop: deep amethyst (#885C99) satin drape into ink (#050507), empty matte lavender (#C9A7E0) surface in the lower third, soft key light from the upper left. No people, hands, text, logos or props.",
+      "credits": 2.75,
+      "note": "decorative only; never shown as client work"
+    },
+    {
+      "name": "amethyst-9x16",
+      "model": "gpt_image_2_5 (high, 2k)",
+      "prompt": "Same as amethyst-16x9, vertical composition, surface in the lower half.",
+      "credits": 2.75,
+      "note": "decorative only; never shown as client work"
+    },
+    {
+      "name": "ivory-1x1",
+      "model": "gpt_image_2_5 (high, 2k)",
+      "prompt": "Top-down ivory (#F5F4F2) to pale lavender satin surface with a faint amethyst glow in one corner. No people, hands, text, logos or props.",
+      "credits": 2.75,
+      "note": "decorative only; never shown as client work"
+    }
+  ],
+  "files": [
+    {
+      "file": "assets/img/nails-1-16x9-1600.webp",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "desktop hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-1-16x9-960.webp",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "desktop hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-1-4x5-480.webp",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "site gallery (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-1-4x5-960.webp",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "site gallery (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-1-9x16-540.webp",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "mobile hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-1-9x16-720.webp",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "mobile hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/social/nails-1-16x9.jpg",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/social/nails-1-1x1.jpg",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/social/nails-1-4x5.jpg",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/social/nails-1-9x16.jpg",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: bead charm on the index nail redrawn"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/nails-2-16x9-1600.webp",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "desktop hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-2-16x9-960.webp",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "desktop hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-2-4x5-480.webp",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "site gallery (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-2-4x5-960.webp",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "site gallery (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-2-9x16-540.webp",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "mobile hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-2-9x16-720.webp",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "mobile hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/social/nails-2-16x9.jpg",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/social/nails-2-1x1.jpg",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/social/nails-2-4x5.jpg",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/social/nails-2-9x16.jpg",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "accepted: flower and French outlines unchanged"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "upscaled photo",
+          "result": "accepted: hand pixels identical to the upscale"
+        }
+      ],
+      "backdrop": "amethyst",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/nails-3-16x9-1600.webp",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "desktop hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-3-16x9-960.webp",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "desktop hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-3-4x5-480.webp",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "site gallery (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-3-4x5-960.webp",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "site gallery (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-3-9x16-540.webp",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "mobile hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/nails-3-9x16-720.webp",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow) of the background-removed real hand on a Higgsfield backdrop",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "mobile hero poster (Phase 4)"
+    },
+    {
+      "file": "assets/img/social/nails-3-16x9.jpg",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/social/nails-3-1x1.jpg",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/social/nails-3-4x5.jpg",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/img/social/nails-3-9x16.jpg",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local composite (Pillow)",
+      "higgsfield_steps": [
+        {
+          "model": "bytedance_image_upscale",
+          "prompt": "Faithful upscale of this real photo. Keep every detail exactly: nail shape, colour, length, design, finish and hand anatomy unchanged.",
+          "result": "REJECTED: daisy petals on the accent nail lost"
+        },
+        {
+          "model": "image_background_remover",
+          "prompt": "Remove the background only. Keep the hand and nails exactly as they are.",
+          "input": "original photo",
+          "result": "accepted: hand pixels identical to the original"
+        }
+      ],
+      "backdrop": "ivory (top-down, matches the overhead shot)",
+      "date": "2026-10-27",
+      "used_in": "social posts (feed 1:1 / 4:5, Reels and WhatsApp Status 9:16)"
+    },
+    {
+      "file": "assets/ads/ad-premium-1x1.jpg",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "premium ad (static); video version pending ffmpeg"
+    },
+    {
+      "file": "assets/ads/ad-premium-9x16.jpg",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "premium ad (static); video version pending ffmpeg"
+    },
+    {
+      "file": "assets/ads/ad-problem-1x1.jpg",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "problem ad (static); video version pending ffmpeg"
+    },
+    {
+      "file": "assets/ads/ad-problem-9x16.jpg",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "problem ad (static); video version pending ffmpeg"
+    },
+    {
+      "file": "assets/ads/ad-refill-1x1.jpg",
+      "source_photo": "none (logo and brand gradient only)",
+      "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "refill ad (static); video version pending ffmpeg"
+    },
+    {
+      "file": "assets/ads/ad-refill-9x16.jpg",
+      "source_photo": "none (logo and brand gradient only)",
+      "model": "local HTML layout rendered by headless Chrome; prices and phone typed from Part 1",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "refill ad (static); video version pending ffmpeg"
+    },
+    {
+      "file": "assets/img/share-1200x630.jpg",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "local HTML layout rendered by headless Chrome",
+      "prompt": null,
+      "date": "2026-10-27",
+      "used_in": "og:image / WhatsApp and Facebook link preview (Phase 4)"
+    }
+  ],
+  "video_clips": [
+    {
+      "name": "nails-2-9x16",
+      "source_photo": "assets/work-nails-2.jpg",
+      "model": "seedance_2_0_mini 720p, 5 s, silent",
+      "prompt": "Animate this exact photo. The hand stays perfectly still and unchanged (same nails, design, finish, five fingers). Only the camera and light move: slow push-in easing back to the start frame for a seamless loop, a soft band of light across the gloss, satin ripples gently. Brand style lock. No text, logos, new objects, extra fingers or morphing.",
+      "credits": 5,
+      "result": "accepted; waiting for ffmpeg compression before it is committed"
+    },
+    {
+      "name": "nails-1-9x16",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "seedance_2_0_mini 720p, 5 s, silent",
+      "prompt": "Animate this exact photo. The hand stays perfectly still and unchanged (same nails, design, finish, five fingers). Only the camera and light move: slow push-in easing back to the start frame for a seamless loop, a soft band of light across the gloss, satin ripples gently. Brand style lock. No text, logos, new objects, extra fingers or morphing.",
+      "credits": 5,
+      "result": "REJECTED: gold charm and beads change shape mid-clip"
+    },
+    {
+      "name": "nails-3-9x16",
+      "source_photo": "assets/work-nails-3.jpg",
+      "model": "seedance_2_0_mini 720p, 5 s, silent",
+      "prompt": "Animate this exact photo. The hand stays perfectly still and unchanged (same nails, design, finish, five fingers). Only the camera and light move: slow push-in easing back to the start frame for a seamless loop, a soft band of light across the gloss, satin ripples gently. Brand style lock. No text, logos, new objects, extra fingers or morphing.",
+      "credits": 5,
+      "result": "REJECTED: little-finger nail becomes longer and lighter"
+    },
+    {
+      "name": "hero-nails-1-16x9",
+      "source_photo": "assets/work-nails-1.jpg",
+      "model": "seedance_2_0_mini 720p, 8 s, silent",
+      "prompt": "Animate this exact photo. The hand stays perfectly still and unchanged (same nails, design, finish, five fingers). Only the camera and light move: slow push-in easing back to the start frame for a seamless loop, a soft band of light across the gloss, satin ripples gently. Brand style lock. No text, logos, new objects, extra fingers or morphing.",
+      "credits": 8,
+      "result": "NOT USED: slight drift in the gold charm; site hero uses CSS motion on the real still instead"
+    }
+  ]
+}
