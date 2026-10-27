@@ -1,0 +1,15 @@
+# Files Cloudflare should not publish with the site (same syntax as .gitignore).
+# Internal planning, prompts, message templates and dev tooling stay private.
+.git
+.claude/
+docs/
+marketing/
+tools/
+raw-photos/
+site-package/
+*.md
+server.js
+deploy-edge.js
+deploy-supabase.js
+.gitignore
+.assetsignore
