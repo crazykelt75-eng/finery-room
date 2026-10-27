@@ -1,0 +1,10 @@
+// Cloudflare Workers config: a static site served from the repo root.
+// Branch builds (`wrangler versions upload`) need this file; .assetsignore keeps
+// internal files out of the upload.
+{
+  "name": "finery-room",
+  "compatibility_date": "2026-10-23",
+  "assets": {
+    "directory": "."
+  }
+}

@@ -13,3 +13,5 @@ deploy-edge.js
 deploy-supabase.js
 .gitignore
 .assetsignore
+wrangler.jsonc
+.wrangler/
