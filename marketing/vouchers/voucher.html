@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Finery Room gift voucher</title>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500..700;1,6..96,500&family=Jost:wght@400;500;600&display=block" rel="stylesheet">
+<style>
+  /* Rendered at 1600x900 for each value: voucher.html?value=70&label=Classic%20Lash%20Set */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1600px; height: 900px; overflow: hidden; }
+  body { font-family: Jost, sans-serif; color: #F5F4F2; background: radial-gradient(circle at 22% 20%, #885C99 0%, #3a2244 38%, #0A090C 80%); }
+  .card { position: absolute; inset: 40px; border: 2px solid rgba(201, 167, 224, .55); border-radius: 36px; display: grid; grid-template-columns: 1fr 520px; overflow: hidden; }
+  .left { padding: 64px 70px; display: flex; flex-direction: column; }
+  .eyebrow { font-size: 22px; letter-spacing: 8px; text-transform: uppercase; color: #C9A7E0; font-weight: 600; }
+  h1 { font-family: 'Bodoni Moda', serif; font-size: 96px; font-weight: 600; line-height: 1; margin: 18px 0 8px; }
+  .for { font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 34px; color: #C9A7E0; }
+  .fields { margin-top: auto; display: grid; gap: 22px; font-size: 26px; color: #d9cde3; }
+  .line { display: flex; gap: 16px; align-items: flex-end; }
+  .line span:last-child { flex: 1; border-bottom: 1.5px solid rgba(201, 167, 224, .55); height: 30px; }
+  .right { background: rgba(10, 9, 12, .55); border-left: 2px solid rgba(201, 167, 224, .35); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; text-align: center; padding: 40px; }
+  .right img { width: 170px; height: 170px; border-radius: 50%; mix-blend-mode: screen; }
+  .value { font-family: 'Bodoni Moda', serif; font-size: 150px; font-weight: 700; color: #C9A7E0; line-height: 1; }
+  .label { font-size: 28px; letter-spacing: 1px; }
+  .book { margin-top: 10px; background: #25D366; color: #06210f; font-weight: 600; font-size: 26px; padding: 16px 28px; border-radius: 999px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <div class="eyebrow">Finery Room · Tati Siding</div>
+      <h1>Gift Voucher</h1>
+      <div class="for">A little luxury, just for you</div>
+      <div class="fields">
+        <div class="line"><span>For</span><span></span></div>
+        <div class="line"><span>From</span><span></span></div>
+        <div class="line"><span>Voucher no.</span><span style="flex:none;width:200px;height:30px;border-bottom:1.5px solid rgba(201,167,224,.55)"></span><span style="flex:none;border:0;width:30px"></span><span>Valid until</span><span></span></div>
+      </div>
+    </div>
+    <div class="right">
+      <img src="../../assets/logo.jpg" alt="">
+      <div class="value" id="value">P—</div>
+      <div class="label" id="label"></div>
+      <div class="book">Book on WhatsApp<br>+267 765 841 00</div>
+    </div>
+  </div>
+  <script>
+    const q = new URLSearchParams(location.search);
+    document.getElementById('value').textContent = 'P' + (q.get('value') || '—');
+    document.getElementById('label').textContent = q.get('label') || '';
+  </script>
+</body>
+</html>
