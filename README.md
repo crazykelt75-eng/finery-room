@@ -36,15 +36,17 @@ Official production marketing website for **Finery Room**, a premier eyelash ext
 ---
 
 ## 📜 Studio Policies (Warm but Firm)
-1. **Deposit Requirement**: A deposit may be required to secure a booking slot (credited toward service total).
-2. **Arrival Time**: Please arrive on time; sessions cannot be extended into the next client's reservation.
-3. **No-Show Policy**: No-shows will not be rebooked. Cancellations require 24 hours notice on WhatsApp.
+1. **Deposit Requirement**: A deposit may be required to secure a booking.
+2. **Arrival Time**: Clients must arrive on time.
+3. **No-Show Policy**: No-shows will not be rebooked.
 
 ---
 
 ## 📍 Studio Location & Contact
-- **Address**: New Stands, Tati Siding, North-East District, Botswana
+- **Address**: New Stands, Tati Siding, North-East District, Botswana (serving Tati Siding and Francistown)
+- **Hours**: Every day, 7am to 5pm
 - **WhatsApp / Calls**: `+267 765 841 00`
+- **Live site**: https://finery-room.crazykelt75.workers.dev/
 - **WhatsApp Booking Link**: `https://wa.me/26776584100`
 
 ---

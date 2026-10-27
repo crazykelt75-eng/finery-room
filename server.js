@@ -1,8 +1,11 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const zlib = require('zlib');
 
 const PORT = 8088;
+// Compress text like the live host does, so local Lighthouse runs are comparable
+const COMPRESSIBLE = new Set(['.html', '.css', '.js', '.json', '.svg']);
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
   '.css': 'text/css; charset=UTF-8',
@@ -13,6 +16,7 @@ const MIME_TYPES = {
   '.jpeg': 'image/jpeg',
   '.png': 'image/png',
   '.webp': 'image/webp',
+  '.mp4': 'video/mp4',
   '.ico': 'image/x-icon'
 };
 
@@ -37,14 +41,21 @@ const server = http.createServer((req, res) => {
     const ext = path.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
-    res.writeHead(200, {
+    const gzip = COMPRESSIBLE.has(ext) && /\bgzip\b/.test(req.headers['accept-encoding'] || '');
+    const headers = {
       'Content-Type': contentType,
       'Cache-Control': 'no-cache, no-store, must-revalidate',
       'Access-Control-Allow-Origin': '*'
-    });
+    };
+    if (gzip) headers['Content-Encoding'] = 'gzip';
+    res.writeHead(200, headers);
 
     const stream = fs.createReadStream(filePath);
-    stream.pipe(res);
+    if (gzip) {
+      stream.pipe(zlib.createGzip()).pipe(res);
+    } else {
+      stream.pipe(res);
+    }
   });
 });
 
